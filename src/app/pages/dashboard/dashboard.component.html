@@ -1,0 +1,58 @@
+<div class="container-fluid page">
+    <div class="page__box p-3 mt-2"> Dashboard </div>
+    <div class="page__content shadow p-3 position-relative">
+        <!-- <div class="page__content-data position-absolute text-center">
+            Dashboard contents Goes here
+        </div> -->
+        <table mat-table [dataSource]="dataSource" class="dashboardTable mat-elevation-z8">
+
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+          
+            <!-- Position Column -->
+            <ng-container matColumnDef="CaseNumber">
+              <th mat-header-cell *matHeaderCellDef> Case Number </th>
+              <td mat-cell *matCellDef="let element"> {{element.CaseNumber}} </td>
+            </ng-container>
+          
+            <!-- Name Column -->
+            <ng-container matColumnDef="ProgramID">
+              <th mat-header-cell *matHeaderCellDef> Program ID </th>
+              <td mat-cell *matCellDef="let element"> {{element.ProgramID}} </td>
+            </ng-container>
+          
+            <!-- Weight Column -->
+            <ng-container matColumnDef="PrimaryProduct">
+              <th mat-header-cell *matHeaderCellDef> Primary Product </th>
+              <td mat-cell *matCellDef="let element"> {{element.PrimaryProduct}} </td>
+            </ng-container>
+            
+            <ng-container matColumnDef="Event">
+                <th mat-header-cell *matHeaderCellDef> Event </th>
+                <td mat-cell *matCellDef="let element"> {{element.Event}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="CreateDate">
+                <th mat-header-cell *matHeaderCellDef> Create Date </th>
+                <td mat-cell *matCellDef="let element"> {{element.CreateDate}} </td>
+              </ng-container> 
+              
+              <ng-container matColumnDef="CaseDetails">
+                <th mat-header-cell *matHeaderCellDef> Case Details </th>
+                <td mat-cell *matCellDef="let element"> {{element.caseDetails}} </td>
+              </ng-container>
+
+                
+              <!-- <ng-container matColumnDef="CaseHistory">
+                <th mat-header-cell *matHeaderCellDef> Case History </th>
+                <td mat-cell *matCellDef="let element"> {{element.caseHistory}} </td>
+              </ng-container> -->
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+          <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+          showFirstLastButtons 
+          aria-label="Select page of periodic elements">
+          </mat-paginator>
+    </div>
+</div>

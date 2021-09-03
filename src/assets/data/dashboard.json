@@ -1,0 +1,56 @@
+{
+    "headerValues": [
+      "Case Number",
+      "Program ID",
+      "Primary Product",
+      "Event",
+      "Create Date"
+    ],
+    "searchResultList": [
+      [
+        "PVI-AS-2021-001019",
+        "%",
+        "%",
+        "%",
+        "04-Aug-2021 19:13:53"
+      ],
+      [
+        "PVI-AL-2020-001349",
+        "ACCELERATED PHASE MYOLOGENIC CHRON",
+        "TEST",
+        "TESTTT",
+        "17-Dec-2020 13:06:15"
+      ]
+    ],
+    "count": 2,
+    "flagCPO": false,
+    "answers": null,
+    "searchCriteriaList": null,
+    "headerResponseList": [
+      {
+        "headerLabelName": "Case Number",
+        "headerColumnMapping": "AEGIS_CASE_ID",
+        "dateSortingCol": false
+      },
+      {
+        "headerLabelName": "Program ID",
+        "headerColumnMapping": "PROGRAM_ID",
+        "dateSortingCol": false
+      },
+      {
+        "headerLabelName": "Primary Product",
+        "headerColumnMapping": "PRIMARY_PRODUCT",
+        "dateSortingCol": false
+      },
+      {
+        "headerLabelName": "Event",
+        "headerColumnMapping": "ADVERSE_EVENT",
+        "dateSortingCol": false
+      },
+      {
+        "headerLabelName": "Create Date",
+        "headerColumnMapping": "CREATED_DATE",
+        "dateSortingCol": true
+      }
+    ]
+  }

@@ -1,0 +1,10 @@
+<mat-drawer-container>
+  <mat-drawer mode="side" [opened]="sideBarOpen">
+    <!-- <mat-drawer mode="side" opened="true"> -->
+    <pvi-dashboard-sidenav></pvi-dashboard-sidenav>
+  </mat-drawer>
+  <mat-drawer-content>
+    <pvi-header (toggleSidebarForMe)="sideBarToggler()"></pvi-header>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
