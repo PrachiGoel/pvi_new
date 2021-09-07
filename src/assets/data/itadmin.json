@@ -1,0 +1,99 @@
+{
+    "headerValues": [
+      "Case Number",
+      "Primary Product",
+      "Event",
+      "Seriousness",
+      "Status",
+      "Create Date",
+      "Update Date"
+    ],
+    "searchResultList": [
+      [
+        "PVI-AU-2021-001546",
+        "WONDER DRUG1",
+        "ANGIOEDEMA",
+        "SERIOUS",
+        "text_Transmitted",
+        "06-Sep-2021 15:47:20",
+        "06-Sep-2021 15:47:29"
+      ],
+      [
+        "PVI-AU-2021-001545",
+        "TESTAM",
+        "DEMENTIA",
+        "SERIOUS",
+        "text_Transmitted",
+        "06-Sep-2021 15:44:07",
+        "06-Sep-2021 15:44:19"
+      ],
+      [
+        "PVI-AG-2021-001005",
+        "WONBI-D",
+        "DEMENTIA",
+        "SERIOUS",
+        "text_Transmitted",
+        "03-Sep-2021 18:52:36",
+        "03-Sep-2021 18:52:56"
+      ],
+      [
+        "PVI-AG-2021-001006",
+        "W CLOR",
+        "DEMENTIA",
+        "SERIOUS",
+        "text_Transmitted",
+        "03-Sep-2021 18:40:57",
+        "03-Sep-2021 18:41:41"
+      ],
+      [
+        "PVI-AZ-2021-001001",
+        "COMPANY PRODUCT 1",
+        "FEVER",
+        "NON-SERIOUS",
+        "text_Transmitted",
+        "03-Sep-2021 11:18:04",
+        "03-Sep-2021 11:18:14"
+      ]
+    ],
+    "count": 502875,
+    "flagCPO": false,
+    "answers": null,
+    "searchCriteriaList": null,
+    "headerResponseList": [
+      {
+        "headerLabelName": "Case Number",
+        "headerColumnMapping": "AEGIS_CASE_ID",
+        "dateSortingCol": false
+      },
+      {
+        "headerLabelName": "Primary Product",
+        "headerColumnMapping": "PRIMARY_PRODUCT",
+        "dateSortingCol": false
+      },
+      {
+        "headerLabelName": "Event",
+        "headerColumnMapping": "ADVERSE_EVENT",
+        "dateSortingCol": false
+      },
+      {
+        "headerLabelName": "Seriousness",
+        "headerColumnMapping": "IS_CASE_SERIOUS",
+        "dateSortingCol": false
+      },
+      {
+        "headerLabelName": "Status",
+        "headerColumnMapping": "STATUS",
+        "dateSortingCol": false
+      },
+      {
+        "headerLabelName": "Create Date",
+        "headerColumnMapping": "CREATED_DATE",
+        "dateSortingCol": true
+      },
+      {
+        "headerLabelName": "Update Date",
+        "headerColumnMapping": "UPDATED_DATE",
+        "dateSortingCol": true
+      }
+    ]
+  }
