@@ -1,0 +1,14 @@
+@import "../home/home.component.scss";
+
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  mat-form-field {
+    flex: 0 1 calc(33.3% - 32px);
+  }
+  table {
+    width: 100%;
+}

@@ -21,7 +21,7 @@ export class DashboardComponent implements OnInit {
   fetchDashboardData(){
      
     this.appService.getDashboardData().subscribe((data:any) => {
-      console.log(data);
+      //console.log(data);
       this.dashboardData = data;
       this.displayedColumns = this.dashboardData.headerValues.map((item:any) => {
         item = item.replace(/ /g, "");

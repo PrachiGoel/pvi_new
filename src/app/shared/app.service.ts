@@ -11,4 +11,7 @@ export class AppService {
   getDashboardData(){
     return this.http.get(this.REST_API_SERVER)
   }
+  getUserManagementData(){
+    return this.http.get('assets/data/usermanagement.json')
+  }
 }
