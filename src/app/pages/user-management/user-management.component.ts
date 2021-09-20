@@ -72,7 +72,7 @@ export class UserManagementComponent implements OnInit {
           }else if(key == 'CreatedDate'){
             result[key] = this.datePipe.transform(column['createdDate'],'yyyy-MM-dd');
           }else if(key == 'UserStatus'){
-            result[key] = column['userStatus'];
+            result[key] = "Verification Pending";
           }else if(key == 'Action'){
             result[key] = 'Action';
           }
