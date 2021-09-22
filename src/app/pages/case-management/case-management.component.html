@@ -1,0 +1,72 @@
+<div class="container-fluid page">
+  <div class="shadow p-3 position-relative">
+    <div fxLayout="column wrap" fxLayoutAlign="center">
+      <form [formGroup]="caseForm" (ngSubmit)="onSubmit()">
+
+        <div fxLayout="row wrap" fxLayoutGap="1px" fxLayoutAlign="space-around">
+          <mat-form-field appearance="fill">
+            <mat-label for="userStatus">User Type</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option>None</mat-option>
+              <mat-option value="option1">Option 1</mat-option>
+              <mat-option value="option2">Option 2</mat-option>
+              <mat-option value="option3">Option 3</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label for="userStatus">Vendor Name</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option>None</mat-option>
+              <mat-option value="option1">Option 1</mat-option>
+              <mat-option value="option2">Option 2</mat-option>
+              <mat-option value="option3">Option 3</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+        </div>
+
+        <div fxLayout="row wrap" fxLayoutGap="1px" fxLayoutAlign="space-around">
+          <mat-form-field appearance="fill">
+            <mat-label for="email">Email Id</mat-label>
+            <input matInput type="text" id="email" name="email" formControlName="email">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label for="userStatus">Seriousness</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option>None</mat-option>
+              <mat-option value="option1">Option 1</mat-option>
+              <mat-option value="option2">Option 2</mat-option>
+              <mat-option value="option3">Option 3</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+
+        </div>
+
+        <div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="center">
+
+          <button mat-raised-button>Search</button>
+          <button mat-raised-button>Reset</button>
+        </div>
+
+      </form>
+    </div>
+    <div class=" p-3 position-relative">
+      <table mat-table [dataSource]="dataSource" class="dashboardTable mat-elevation-z8">
+
+
+        <ng-container *ngFor="let disCol of displayedColumns; let colIndex = index" matColumnDef="{{disCol}}">
+          <mat-header-cell *matHeaderCellDef>{{disCol}}</mat-header-cell>
+          <mat-cell *matCellDef="let element "> {{element[disCol]}}
+          </mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+      </table>
+      <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
+      </mat-paginator>
+    </div>
+  </div>
+</div>

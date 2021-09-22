@@ -14,4 +14,7 @@ export class AppService {
   getUserManagementData(){
     return this.http.get('assets/data/usermanagement.json')
   }
+  getCaseManagementData(){
+    return this.http.get('assets/data/casemanagement.json')
+  }
 }

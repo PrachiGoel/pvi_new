@@ -1,0 +1,23 @@
+@import "../home/home.component.scss";
+
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  mat-form-field {
+    flex: 0 1 calc(50% - 32px);
+  }
+  table {
+    width: 100%;
+}
+mat-cell {
+  word-wrap: break-word;
+  // word-break:break-all;
+  justify-content: flex-start;
+}   
+mat-header-cell{
+  justify-content: flex-start;
+ 
+}

@@ -14,6 +14,7 @@ import { UserManagementComponent } from './pages/user-management/user-management
 import { ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DatePipe } from '@angular/common';
+import { CaseManagementComponent } from './pages/case-management/case-management.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { DatePipe } from '@angular/common';
     HeaderComponent,
     QuestionnaireComponent,
     UserManagementComponent,
+    CaseManagementComponent,
   ],
   imports: [
     BrowserModule,
